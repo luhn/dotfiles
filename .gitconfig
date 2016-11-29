@@ -1,0 +1,32 @@
+[user]
+	name = Theron Luhn
+	email = theron@luhn.com
+	signingkey = D2D9062A
+
+[push]
+	default = simple
+[core]
+	excludesfile = ~/Config/gitignore
+	editor = /usr/bin/vim
+[merge]
+	tool = p4merge
+[mergetool]
+	prompt = false
+[mergetool "p4merge"]
+	cmd = /Applications/p4merge.app/Contents/Resources/launchp4merge "$PWD/$BASE" "$PWD/$REMOTE" "$PWD/$LOCAL" "$PWD/$MERGED"
+	keepTemporaries = false
+	trustExitCode = false
+	keepBackup = false
+[filter "media"]
+	clean = git-media-clean %f
+	smudge = git-media-smudge %f
+[filter "hawser"]
+	clean = git hawser clean %f
+	smudge = git hawser smudge %f
+	required = true
+[credential]
+	helper = osxkeychain
+[filter "lfs"]
+	clean = git lfs clean %f
+	smudge = git lfs smudge %f
+	required = true
