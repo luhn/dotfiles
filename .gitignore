@@ -1,6 +1,3 @@
-manifest.json
-.dockerignore
-
 # vim
 *.swo
 *.swp
@@ -11,8 +8,6 @@ Session.vim
 
 # virtualenv
 env/
-env2/
-env3/
 
 # Mac OS X
 .DS_Store
@@ -27,6 +22,3 @@ Icon
 # Files that might appear on external disk
 .Spotlight-V100
 .Trashes
-
-# Misc
-tern.yml
