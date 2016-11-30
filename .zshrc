@@ -52,9 +52,6 @@ export PAGER="less -X"
 # Use vim as the default editor for everything.
 export EDITOR=/usr/local/bin/vim
 
-# Docker
-eval $(docker-machine env default)
-
 # Use vim mode
 bindkey -v
 bindkey '^R' history-incremental-search-backward
@@ -62,9 +59,10 @@ bindkey '^S' history-incremental-search-forward
 bindkey '^P' history-search-backward
 bindkey '^N' history-search-forward
 
+# Docker
+eval $(docker-machine env default)
+
 # Rackspace credentials
 source ~/.rackspace-cred
 
 antigen apply
-
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
