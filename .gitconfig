@@ -6,7 +6,7 @@
 [push]
 	default = simple
 [core]
-	excludesfile = ~/Config/gitignore
+	excludesfile = ~/config/.gitignore
 	editor = /usr/bin/vim
 [merge]
 	tool = p4merge
