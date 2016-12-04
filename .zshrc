@@ -8,6 +8,8 @@ antigen bundle osx
 antigen bundle git
 antigen bundle zsh-users/zsh-syntax-highlighting
 
+antigen apply
+
 # Some handy commands
 alias pycclean="find . -name '*.pyc' -delete"
 alias swpclean="find . -name '.*.swp' -delete"
@@ -64,5 +66,3 @@ eval $(docker-machine env default)
 
 # Rackspace credentials
 source ~/.rackspace-cred
-
-antigen apply
