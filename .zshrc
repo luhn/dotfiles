@@ -8,7 +8,6 @@ source $HOME/.antigen-src/antigen.zsh
 antigen-use oh-my-zsh
 
 antigen theme robbyrussell
-antigen bundle osx
 antigen bundle git
 antigen bundle zsh-users/zsh-syntax-highlighting
 
