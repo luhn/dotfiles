@@ -39,7 +39,7 @@ alias bell="afplay /System/Library/Sounds/Glass.aiff"
 alias lock="open -a /System/Library/Frameworks/ScreenSaver.framework/Versions/A/Resources/ScreenSaverEngine.app"
 
 # Password generation
-alias nicepass="xkcdpass -w ~/Config/words.txt -n 4"
+alias nicepass="xkcdpass -w $DOTFILES/words.txt -n 4"
 alias password="python -c \"from os import urandom; from base64 import urlsafe_b64encode; print(urlsafe_b64encode(urandom(12)))\""
 
 # FUCK!
