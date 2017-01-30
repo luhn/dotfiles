@@ -27,12 +27,12 @@ Plugin 'gmarik/Vundle.vim'
 " Plugin 'user/L9', {'name': 'newL9'}
 
 Plugin 'altercation/vim-colors-solarized'
-Plugin 'tpope/vim-fugitive'
 Plugin 'hynek/vim-python-pep8-indent'
 Plugin 'ntpeters/vim-better-whitespace'
-Plugin 'kchmck/vim-coffee-script'
-" Plugin 'Valloric/MatchTagAlways'
 Plugin 'tpope/vim-surround'
+Plugin 'kburdett/vim-nuuid'
+
+" Highlighting plugins
 Plugin 'jtratner/vim-flavored-markdown'
 Plugin 'exu/pgsql.vim'
 Plugin 'bkad/vim-terraform'
