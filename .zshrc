@@ -37,6 +37,7 @@ alias swpclean="find . -name '.*.swp' -delete"
 alias origclean="find . -name '*.orig' -delete"
 alias bell="afplay /System/Library/Sounds/Glass.aiff"
 alias lock="open -a /System/Library/Frameworks/ScreenSaver.framework/Versions/A/Resources/ScreenSaverEngine.app"
+alias gitpushnew="git push -u origin \$(git rev-parse --abbrev-ref HEAD)"
 
 # Password generation
 alias nicepass="xkcdpass -w $DOTFILES/words.txt -n 4"
@@ -47,5 +48,6 @@ export THEFUCK_REQUIRE_CONFIRMATION=false
 alias fuck='eval $(thefuck $(fc -ln -1))'
 
 # Terraform utils
-alias tfplan='terraform plan -out .tfplan'
+alias tfplan='terraform plan -out=.tfplan -refresh=false'
+alias tffreshplan='terraform plan -out=.tfplan'
 alias tfapply='terraform apply .tfplan; rm .tfplan'
