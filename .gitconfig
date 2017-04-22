@@ -4,7 +4,7 @@
 	signingkey = D2D9062A
 
 [push]
-	default = simple
+	default = current
 [core]
 	excludesfile = ~/.gitignore
 	editor = /usr/bin/vim

@@ -37,7 +37,6 @@ alias swpclean="find . -name '.*.swp' -delete"
 alias origclean="find . -name '*.orig' -delete"
 alias bell="afplay /System/Library/Sounds/Glass.aiff"
 alias lock="open -a /System/Library/Frameworks/ScreenSaver.framework/Versions/A/Resources/ScreenSaverEngine.app"
-alias gitpushnew="git push -u origin \$(git rev-parse --abbrev-ref HEAD)"
 
 # Password generation
 alias nicepass="xkcdpass -w $DOTFILES/words.txt -n 4"
