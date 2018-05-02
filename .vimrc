@@ -83,6 +83,7 @@ set visualbell
 " 4-space tabs only for Python and HTML
 autocmd Filetype python setlocal expandtab tabstop=4 shiftwidth=4 softtabstop=4
 autocmd Filetype javascript setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
+autocmd Filetype typescript setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
 autocmd Filetype html setlocal noexpandtab tabstop=2 shiftwidth=2
 autocmd Filetype xml setlocal noexpandtab tabstop=2 shiftwidth=2
 
