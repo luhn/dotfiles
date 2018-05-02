@@ -10,7 +10,3 @@ syspip(){
 syspip3(){
 	PIP_REQUIRE_VIRTUALENV="" pip3 "$@"
 }
-
-# Don't write .pyc files.
-PYTHONDONTWRITEBYTECODE=True
-export PYTHONDONTWRITEBYTECODE
