@@ -28,9 +28,6 @@ bindkey '^N' history-search-forward
 # Don't clear pager for psql.
 export PAGER="less -X"
 
-# Docker
-eval $(docker-machine env default)
-
 # Some handy commands
 alias pycclean="find . -name '*.pyc' -delete"
 alias swpclean="find . -name '.*.swp' -delete"
