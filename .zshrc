@@ -47,3 +47,10 @@ alias fuck='eval $(thefuck $(fc -ln -1))'
 alias tfplan='terraform plan -out=.tfplan -refresh=false'
 alias tffreshplan='terraform plan -out=.tfplan'
 alias tfapply='terraform apply .tfplan; rm .tfplan'
+function tfprod() {
+	terraform workspace select prod
+	eval "$@"
+	ret=$?
+	terraform workspace select default
+	return $ret
+}
