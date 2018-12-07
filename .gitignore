@@ -11,6 +11,9 @@ Session.vim
 env/
 .env/
 
+# Node
+node_modules/
+
 # Mac OS X
 .DS_Store
 .AppleDouble
