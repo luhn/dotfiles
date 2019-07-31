@@ -6,6 +6,9 @@ eval "$(pyenv virtualenv-init -)"
 # Configure pyenv
 export PYENV_ROOT="$HOME/.pyenv"
 
+# Configure poetry
+export PATH=$PATH:~/.poetry/bin
+
 # pip should only run if there is a virtualenv currently activated
 export PIP_REQUIRE_VIRTUALENV=true
 
