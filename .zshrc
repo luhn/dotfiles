@@ -28,6 +28,9 @@ bindkey '^N' history-search-forward
 # Don't clear pager for psql.
 export PAGER="less -X"
 
+# Fix for GPG
+export GPG_TTY=$(tty)
+
 # Some handy commands
 alias pycclean="find . -name '*.pyc' -delete"
 alias swpclean="find . -name '.*.swp' -delete"
