@@ -36,20 +36,12 @@ alias pycclean="find . -name '*.pyc' -delete"
 alias swpclean="find . -name '.*.swp' -delete"
 alias origclean="find . -name '*.orig' -delete"
 alias bell="afplay /System/Library/Sounds/Glass.aiff"
-alias lock="open -a /System/Library/Frameworks/ScreenSaver.framework/Versions/A/Resources/ScreenSaverEngine.app"
-
-# Password generation
-alias nicepass="xkcdpass -w $DOTFILES/words.txt -n 4"
-alias password="python -c \"from os import urandom; from base64 import urlsafe_b64encode; print(urlsafe_b64encode(urandom(12)))\""
 
 # FUCK!
 export THEFUCK_REQUIRE_CONFIRMATION=false
 alias fuck='eval $(thefuck $(fc -ln -1))'
 
 # Terraform utils
-alias tfplan='terraform plan -out=.tfplan -refresh=false'
-alias tffreshplan='terraform plan -out=.tfplan'
-alias tfapply='terraform apply .tfplan; rm .tfplan'
 function tfprod() {
 	terraform workspace select prod
 	eval "$@"
