@@ -32,3 +32,5 @@
 	required = true
 [alias]
 	lg = log --oneline --graph
+[pull]
+	ff = only
