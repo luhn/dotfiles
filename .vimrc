@@ -28,6 +28,7 @@ Plugin 'gmarik/Vundle.vim'
 
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'hynek/vim-python-pep8-indent'
+Plugin 'nvie/vim-flake8'
 Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'tpope/vim-surround'
 Plugin 'kburdett/vim-nuuid'
