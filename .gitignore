@@ -6,6 +6,9 @@ Session.vim
 .netrwhist
 *~
 
+# PyCharm
+.idea/
+
 # virtualenv
 .python-version
 env/
