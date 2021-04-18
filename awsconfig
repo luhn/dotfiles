@@ -1,0 +1,28 @@
+[default]
+cli_pager=
+region = us-west-2
+s3 =
+    signature_version = s3v4
+
+sso_start_url = https://rezku.awsapps.com/start
+sso_region = us-west-2
+sso_account_id = 613123265713
+sso_role_name = AdministratorAccess
+
+[profile prod]
+sso_start_url = https://rezku.awsapps.com/start
+sso_region = us-west-2
+sso_account_id = 573881033929
+sso_role_name = AdministratorAccess
+
+[profile backup]
+sso_start_url = https://d-90676619bb.awsapps.com/start
+sso_region = us-east-1
+sso_account_id = 532533163113
+sso_role_name = AdministratorAccess
+
+[profile personal]
+sso_start_url = https://d-92670c23d4.awsapps.com/start
+sso_region = us-west-2
+sso_account_id = 466565666523
+sso_role_name = AdministratorAccess
