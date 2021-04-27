@@ -37,7 +37,6 @@ Plugin 'kburdett/vim-nuuid'
 Plugin 'jtratner/vim-flavored-markdown'
 Plugin 'exu/pgsql.vim'
 Plugin 'bkad/vim-terraform'
-Plugin 'evanmiller/nginx-vim-syntax'
 Plugin 'leafgarland/typescript-vim'
 
 " All of your Plugins must be added before the following line

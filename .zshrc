@@ -5,7 +5,7 @@ source $HOME/.localrc
 # Load antigen
 source $HOME/.antigen-src/antigen.zsh
 
-antigen-use oh-my-zsh
+antigen use oh-my-zsh
 
 antigen theme robbyrussell
 antigen bundle git
