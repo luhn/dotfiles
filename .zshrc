@@ -13,8 +13,6 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 
 antigen apply
 
-source $DOTFILES/zsh/python.zsh
-
 # Use vim as the default editor for everything.
 export EDITOR=/usr/local/bin/vim
 
@@ -48,4 +46,15 @@ function tfprod() {
 	ret=$?
 	terraform workspace select default
 	return $ret
+}
+
+# pyenv
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+export PYENV_ROOT="$HOME/.pyenv"
+
+# pip should only run if there is a virtualenv currently activated
+export PIP_REQUIRE_VIRTUALENV=true
+syspip(){  # Allow installing system packages.
+	PIP_REQUIRE_VIRTUALENV="" pip "$@"
 }
