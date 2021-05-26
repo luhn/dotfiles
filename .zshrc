@@ -51,7 +51,6 @@ function tfprod() {
 # pyenv
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
-export PYENV_ROOT="$HOME/.pyenv"
 
 # pip should only run if there is a virtualenv currently activated
 export PIP_REQUIRE_VIRTUALENV=true

@@ -6,6 +6,7 @@ DIR=`cd $DIR && pwd`
 
 # Delete existing files
 rm $HOME/.zshrc \
+	$HOME/.zprofile \
 	$HOME/.vimrc \
 	$HOME/.gitignore \
 	$HOME/.gitconfig \
@@ -19,6 +20,7 @@ mkdir -p $HOME/.aws
 
 # Symlink new dotfiles
 ln -s $DIR/.zshrc $HOME/.zshrc
+ln -s $DIR/.zprofile $HOME/.zprofile
 ln -s $DIR/.vimrc $HOME/.vimrc
 ln -s $DIR/.gitconfig $HOME/.gitconfig
 ln -s $DIR/.gitignore $HOME/.gitignore
